@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recognize</title>
+</head>
+
+<style>
+    body{
+     background-image:url('https://media.licdn.com/dms/image/C4D12AQE-6pABokfUkg/article-cover_image-shrink_600_2000/0/1588088594591?e=2147483647&v=beta&t=dy9JcUPN3mVNt4PQQKEFJVawCqFvgygQ9lUW0F_1-1M');
+     background-size:cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     display:grid ;
+     height:100%;
+    }
+
+    #rectangle{
+     width:400px;
+     height:100px;
+     background-color: #000000;
+     border-radius: 15px;
+     position:absolute;
+     box-shadow: 0px 0px 10px 5px white;
+     top:25%;
+     left:50%;
+     transform:translate(-50%,-50%);
+     margin-top: 300px;
+    
+
+    }
+
+    #head{
+     text-align: center;
+     font-size: 30px;
+     margin: 0 auto;
+     padding: 3% 5%;
+     font-family: Arial, Helvetica, sans-serif;
+     color: white;
+    }
+
+    #num{
+        font-size: 50px;
+        
+    }
+    .image{
+        color:whitesmoke;
+        font-size: xx-large;
+        padding-bottom: 50px;
+        
+   
+    }
+    .buttons_div{
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 50px;
+        margin: 4px 2px;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 12px;
+  
+    }
+    .button1 {background-color: whitesmoke;
+    font-size: xx-large;} 
+    #image{
+        font-size: xx-large;
+        color:white;
+        
+
+        
+
+        
+        
+    }
+    #frame{
+        color:whitesmoke;
+        text-align: center;
+        color:white;
+        
+    }
+    .button1 {
+        padding: 15px 25px;
+        font-size: 24px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #ee8c4b;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.topnav {
+  overflow: hidden;
+  
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+
+.topnav a.active {
+  
+  color: white;
+}
+
+.topnav-right {
+  float: right;
+padding-right:250px;
+}
+
+</style>
+
+<body>
+
+    <div class="topnav">
+  
+  <div class="topnav-right">
+    <a href="/Index1/Home"><b>HOME</b></a>
+  </div>
+</div>
+
+    
+
+    <section id="content">
+
+        <div class="leftside">
+        <form  method="POST" enctype="multipart/form-data">
+        <center><input id="image" type="file" name="image" accept="image/png, image/jpeg" onchange="preview() "><br><br></center>
+          
+          <div class="buttons_div">
+            <button class="button button1">PREDICT</button>
+            
+          </div>
+        </form>
+        </div>
+  </section>
+
+</body>
+</html>
